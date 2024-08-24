@@ -1,0 +1,90 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .postList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .postItem {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .postItem:hover {
+    background: #e2e2e2;
+  }
+  
+  .postTitle {
+    font-size: 1.5rem;
+    color: #007acc;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .postTitle:hover {
+    color: #005999;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff3333;
+  }
+  
+
+  .postContent {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+
+  .addButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007acc;
+    color: #ffffff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #005999;
+  }
+
+
+  .readmore {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
