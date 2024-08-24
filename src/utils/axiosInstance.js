@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL:   "https://blogpostserver.onrender.com", 
+  baseURL:   process.env.REACT_APP_SERVER_URL, 
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
