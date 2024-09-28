@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongoDB
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  backend22:
+    image: crm_backend_v2 
+    container_name: backend
+    depends_on:
+      - mongodb
+    ports:
+      - "7005:7005"
+    environment:
+      MONGODB_URL: "mongodb://mongoDB:27017"
+
+volumes:
+  mongodb_data:
